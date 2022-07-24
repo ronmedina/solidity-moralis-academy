@@ -1,0 +1,288 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerRemoved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositedTo",
+						"type": "address"
+					}
+				],
+				"name": "deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferedAmount",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "addOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNumApprovals",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "removeOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "setNumApprovals",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addOwners(address)": {
+					"details": "A method to add an address to the Ownerlist",
+					"params": {
+						"_owner": "The address to add as a owner."
+					}
+				},
+				"isOwner(address)": {
+					"details": "A method to verify whether an address is a owner on the Ownerlist",
+					"params": {
+						"_owner": "The address to verify."
+					},
+					"returns": {
+						"_0": "Whether the address is in the Ownerlist."
+					}
+				},
+				"removeOwners(address)": {
+					"details": "A method to remove a owner from the Ownerlist",
+					"params": {
+						"_owner": "The address to remove as a owner."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bank_MultiSIG.sol": "Bank_Multisig"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bank_MultiSIG.sol": {
+			"keccak256": "0xf01666e5c9aa7071471943cc2a0241f90b923a6c04e6a5eead74dfbc709db2da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6931d73960c45d845a8a33d7dace14942c842b23f7403444c5223e5fc65555d7",
+				"dweb:/ipfs/QmT7ZpM6Kc9KDraaubvHkmHYnYcrTUSaW8cZWT8CTB8Fsh"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x87db9df0057cbed9ee5b974ba3c75af7c6955d708588f3ea006c8015fcade523",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://637012b6fe8d21a6eb1c625feac4a6b2223372d7db7c1013bea59ae6335edcc2",
+				"dweb:/ipfs/QmT4cc1kf2YaecE9ssXSH483pnJgfvgswJJ9H193HasVNv"
+			]
+		},
+		"contracts/Ownerlist.sol": {
+			"keccak256": "0x01c7ff1d90b7f83addd969c2019bb3413bc33641dcebbcc4ed79b1b774e32794",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8952ee73dd21e66d2eba17a544012a983db67d3a266dfcca535bbbf44e0da1a8",
+				"dweb:/ipfs/QmSDX3LQC7ZXDcV3iSGoaXiuXpFBptG5UVLyqMKpFYVsJH"
+			]
+		}
+	},
+	"version": 1
+}

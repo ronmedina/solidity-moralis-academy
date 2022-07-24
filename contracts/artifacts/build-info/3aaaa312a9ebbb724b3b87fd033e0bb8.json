@@ -1,0 +1,468 @@
+{
+	"id": "3aaaa312a9ebbb724b3b87fd033e0bb8",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.13",
+	"solcLongVersion": "0.8.13+commit.abaa5c0e",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/SelfDestruct_TestStorage.sol": {
+				"content": "pragma solidity 0.8.13;\r\n\r\ncontract Storage {\r\n    address payable private owner;\r\n    uint256 number;\r\n\r\n    constructor() {\r\n        \r\n    }\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/SelfDestruct_TestStorage.sol": {
+				"Storage": {
+					"abi": [
+						{
+							"inputs": [],
+							"stateMutability": "nonpayable",
+							"type": "constructor"
+						}
+					],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/SelfDestruct_TestStorage.sol\":27:145  contract Storage {... */\n  mstore(0x40, 0x80)\n    /* \"contracts/SelfDestruct_TestStorage.sol\":110:142  constructor() {... */\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n    /* \"contracts/SelfDestruct_TestStorage.sol\":27:145  contract Storage {... */\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/SelfDestruct_TestStorage.sol\":27:145  contract Storage {... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220c8ae1bd828a62c7268db67cf1914ac137ee19e183e6e355c6a59a0a441bd3c8764736f6c634300080d0033\n}\n",
+						"bytecode": {
+							"functionDebugData": {
+								"@_9": {
+									"entryPoint": null,
+									"id": 9,
+									"parameterSlots": 0,
+									"returnSlots": 0
+								}
+							},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220c8ae1bd828a62c7268db67cf1914ac137ee19e183e6e355c6a59a0a441bd3c8764736f6c634300080d0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC8 0xAE SHL 0xD8 0x28 0xA6 0x2C PUSH19 0x68DB67CF1914AC137EE19E183E6E355C6A59A0 LOG4 COINBASE 0xBD EXTCODECOPY DUP8 PUSH5 0x736F6C6343 STOP ADDMOD 0xD STOP CALLER ",
+							"sourceMap": "27:118:0:-:0;;;110:32;;;;;;;;;;27:118;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220c8ae1bd828a62c7268db67cf1914ac137ee19e183e6e355c6a59a0a441bd3c8764736f6c634300080d0033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC8 0xAE SHL 0xD8 0x28 0xA6 0x2C PUSH19 0x68DB67CF1914AC137EE19E183E6E355C6A59A0 LOG4 COINBASE 0xBD EXTCODECOPY DUP8 PUSH5 0x736F6C6343 STOP ADDMOD 0xD STOP CALLER ",
+							"sourceMap": "27:118:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 110,
+									"end": 142,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 145,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220c8ae1bd828a62c7268db67cf1914ac137ee19e183e6e355c6a59a0a441bd3c8764736f6c634300080d0033",
+									".code": [
+										{
+											"begin": 27,
+											"end": 145,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 27,
+											"end": 145,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 27,
+											"end": 145,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 27,
+											"end": 145,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 27,
+											"end": 145,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 27,
+											"end": 145,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/SelfDestruct_TestStorage.sol\":\"Storage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/SelfDestruct_TestStorage.sol\":{\"keccak256\":\"0x724347a202d6bc4c16ca417b1fb857e6ec5d07ae30140c283eb85eb585b9f582\",\"urls\":[\"bzz-raw://18df558d3b0548d01fb7aea0bcf647926dc4b95e5730553f3fb00d6ac32ea997\",\"dweb:/ipfs/QmUjAyiXkmYNT45x5AGvWVrNRuMjT1Cjm8wZ53zYH4W947\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "contracts/SelfDestruct_TestStorage.sol:Storage",
+								"label": "owner",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_address_payable"
+							},
+							{
+								"astId": 5,
+								"contract": "contracts/SelfDestruct_TestStorage.sol:Storage",
+								"label": "number",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_uint256"
+							}
+						],
+						"types": {
+							"t_address_payable": {
+								"encoding": "inplace",
+								"label": "address payable",
+								"numberOfBytes": "20"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/SelfDestruct_TestStorage.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/SelfDestruct_TestStorage.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/SelfDestruct_TestStorage.sol": {
+				"ast": {
+					"absolutePath": "contracts/SelfDestruct_TestStorage.sol",
+					"exportedSymbols": {
+						"Storage": [
+							10
+						]
+					},
+					"id": 11,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"0.8",
+								".13"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:23:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"canonicalName": "Storage",
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 10,
+							"linearizedBaseContracts": [
+								10
+							],
+							"name": "Storage",
+							"nameLocation": "36:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "owner",
+									"nameLocation": "75:5:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "51:29:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address_payable",
+										"typeString": "address payable"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "51:15:0",
+										"stateMutability": "payable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address_payable",
+											"typeString": "address payable"
+										}
+									},
+									"visibility": "private"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "number",
+									"nameLocation": "95:6:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 10,
+									"src": "87:14:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "uint256",
+										"nodeType": "ElementaryTypeName",
+										"src": "87:7:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"body": {
+										"id": 8,
+										"nodeType": "Block",
+										"src": "124:18:0",
+										"statements": []
+									},
+									"id": 9,
+									"implemented": true,
+									"kind": "constructor",
+									"modifiers": [],
+									"name": "",
+									"nameLocation": "-1:-1:-1",
+									"nodeType": "FunctionDefinition",
+									"parameters": {
+										"id": 6,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "121:2:0"
+									},
+									"returnParameters": {
+										"id": 7,
+										"nodeType": "ParameterList",
+										"parameters": [],
+										"src": "124:0:0"
+									},
+									"scope": 10,
+									"src": "110:32:0",
+									"stateMutability": "nonpayable",
+									"virtual": false,
+									"visibility": "public"
+								}
+							],
+							"scope": 11,
+							"src": "27:118:0",
+							"usedErrors": []
+						}
+					],
+					"src": "0:145:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

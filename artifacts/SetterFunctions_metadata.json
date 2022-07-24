@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_number",
+						"type": "int256"
+					}
+				],
+				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SetterFunctions.sol": "SetterFunctions"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SetterFunctions.sol": {
+			"keccak256": "0x6e6a753757dff9cff7ca5ebfdede4a14690d5d2723b8acc1025ba2755056bf79",
+			"urls": [
+				"bzz-raw://ef06889ce1ab688f9a8098ab18dd9964fac76e7e6c4e641ad9f04340edcb67dd",
+				"dweb:/ipfs/QmWdvkquKdLBaYQWwrGmEo9BXBrFaMErB5VwhDro3tU36N"
+			]
+		}
+	},
+	"version": 1
+}

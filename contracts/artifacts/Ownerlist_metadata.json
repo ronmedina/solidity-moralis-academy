@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerRemoved",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "addOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "isOwner",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "removeOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"addOwners(address)": {
+					"details": "A method to add an address to the Ownerlist",
+					"params": {
+						"_owner": "The address to add as a owner."
+					}
+				},
+				"constructor": {
+					"details": "Visibility (public / external) is not needed for constructors anymore:  To prevent a contract from being created, it can be marked abstract. "
+				},
+				"isOwner(address)": {
+					"details": "A method to verify whether an address is a owner on the Ownerlist",
+					"params": {
+						"_owner": "The address to verify."
+					},
+					"returns": {
+						"_0": "Whether the address is in the Ownerlist."
+					}
+				},
+				"removeOwners(address)": {
+					"details": "A method to remove a owner from the Ownerlist",
+					"params": {
+						"_owner": "The address to remove as a owner."
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Ownerlist.sol": "Ownerlist"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ownable.sol": {
+			"keccak256": "0xae905fa938e5a0f653d6a71d65eaa09630412812d271ebb8240ed8a2559aa240",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://341382e508492e83a890430299698b0a30a45cbc7f1a1bef725d4e3de0e9fa51",
+				"dweb:/ipfs/QmQmubXMcsL3H8BNnZ5LHeirgLxw5WN89Yw9RPd4ikDTwu"
+			]
+		},
+		"contracts/Ownerlist.sol": {
+			"keccak256": "0x2c8f582fa7d6a51fa51391945bf67309e497cda29f809cb9ca3aafcdcf89b716",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://45b42e51f78a75aecaa40f45cb3faf2659820b34df5b80d23522c19eb03a7c63",
+				"dweb:/ipfs/QmdyYnhivrmxzZhMPQrqqxivmFe37WGWRjRX1cx9poTBpb"
+			]
+		}
+	},
+	"version": 1
+}

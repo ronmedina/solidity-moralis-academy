@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Input",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ControlFLow.sol": "I"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ControlFLow.sol": {
+			"keccak256": "0x2c157866ad111cd7022d137943dd6f4e20e77f6fd0c90ec2cd5747369a12fe08",
+			"urls": [
+				"bzz-raw://9d89fb6bf29dc43513f8ae75b7b7a5a56365985076810411361fedfcac372660",
+				"dweb:/ipfs/QmUwFbTTaKgc73Kyo8phVKYqeAwqm1r2zkaN9MYvekFPeB"
+			]
+		}
+	},
+	"version": 1
+}

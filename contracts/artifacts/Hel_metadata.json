@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Input",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Hello_Constructor.sol": "Hel"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Hello_Constructor.sol": {
+			"keccak256": "0x82c5e5e40ff94d657e4df8c4b03b6b3a9e2d90b6eb1fbf9562a887d1d21a031e",
+			"urls": [
+				"bzz-raw://19510539fed8f798d9d3f971b55b9e5796674194fe77bedff68503e1f7e887ef",
+				"dweb:/ipfs/QmdxaRyUtVg9kL7Xpef6vYFULpGt6DgQuB2ddNZUfnQJWN"
+			]
+		}
+	},
+	"version": 1
+}

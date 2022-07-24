@@ -1,0 +1,186 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositedTo",
+						"type": "address"
+					}
+				],
+				"name": "deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferedAmount",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "selfDestruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bank_InternalVisibility.sol": "Bank_Inheritance"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bank_InternalVisibility.sol": {
+			"keccak256": "0x45ab7eeda0e518db2796027e81331a677fd85a4383819e13bd963c5e2e0f20ec",
+			"urls": [
+				"bzz-raw://3b47e8f1cc418e82324a1036cb0650d38ed64ab738a548038ca7b0b5eb3f3c0c",
+				"dweb:/ipfs/QmZgeSuZJWvohDGQ3dAKemTvrYLQps9VBPrj1ANt5xz5da"
+			]
+		},
+		"contracts/Inheritance_Destroyable.sol": {
+			"keccak256": "0x82b019bb5ac8fbb1d7ca88cb675c250f5bb2ad34cb4eaa21a3558ae2d0034b9f",
+			"urls": [
+				"bzz-raw://eaaae65d9f38f212bebda2453e2f47a8b6b62f81fe19a0493d0ba127d3bb30d9",
+				"dweb:/ipfs/QmXZK2JuEHwd9XoyBzYCse8tNN2ZSpYxxJGMLivQpH7yLj"
+			]
+		},
+		"contracts/Inheritance_Ownable.sol": {
+			"keccak256": "0xdac6ec7cefd6675146abaf3ee23c4c7e5ecf2e0738a3b600092e0794fa9a0385",
+			"urls": [
+				"bzz-raw://fbfd85259000dc11f5c8382983713a2436536b9716562286e1478813ab28802c",
+				"dweb:/ipfs/QmR4ryZ6yAaFqo3VfLkn56vaR7MjkcHFSTjQwtp6MR6pZF"
+			]
+		}
+	},
+	"version": 1
+}

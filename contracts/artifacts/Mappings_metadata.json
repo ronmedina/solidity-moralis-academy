@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_toAdd",
+						"type": "uint256"
+					}
+				],
+				"name": "addBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bank_Mappings.sol": "Mappings"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bank_Mappings.sol": {
+			"keccak256": "0x3172b39ba0b9bdcd7da719ea5181be12dc21a909a3b3ed5719d7e0538f62978c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2df0365ba5dc88e2df504c45d69b45b5c1d4b7f90e81fa3d97d91f3031560701",
+				"dweb:/ipfs/QmfCAnw1hf7bgKBJt1fUb6r3PSci37usVJT5MUKeEmABmd"
+			]
+		}
+	},
+	"version": 1
+}

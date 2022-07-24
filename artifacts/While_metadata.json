@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "number",
+						"type": "int256"
+					}
+				],
+				"name": "count",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Loops.sol": "While"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Loops.sol": {
+			"keccak256": "0xe8636af692208ae362a7e1377e63b6d1f762bc5e762017d2f23614c9bd801a53",
+			"urls": [
+				"bzz-raw://0b0534f3b5cd8fd82cbb06697e7a81c66881ff77ef5c6ee206dddace862d1dc6",
+				"dweb:/ipfs/QmTLZdxCCKVx9aZoXG6qZxLmVP9GVexKVxmzbesD63kSG5"
+			]
+		}
+	},
+	"version": 1
+}

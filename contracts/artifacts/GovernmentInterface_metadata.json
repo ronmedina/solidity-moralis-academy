@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "addTransaction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bank_MultiSIG.sol": "GovernmentInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bank_MultiSIG.sol": {
+			"keccak256": "0xf01666e5c9aa7071471943cc2a0241f90b923a6c04e6a5eead74dfbc709db2da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6931d73960c45d845a8a33d7dace14942c842b23f7403444c5223e5fc65555d7",
+				"dweb:/ipfs/QmT7ZpM6Kc9KDraaubvHkmHYnYcrTUSaW8cZWT8CTB8Fsh"
+			]
+		},
+		"contracts/Ownable.sol": {
+			"keccak256": "0x87db9df0057cbed9ee5b974ba3c75af7c6955d708588f3ea006c8015fcade523",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://637012b6fe8d21a6eb1c625feac4a6b2223372d7db7c1013bea59ae6335edcc2",
+				"dweb:/ipfs/QmT4cc1kf2YaecE9ssXSH483pnJgfvgswJJ9H193HasVNv"
+			]
+		},
+		"contracts/Ownerlist.sol": {
+			"keccak256": "0x01c7ff1d90b7f83addd969c2019bb3413bc33641dcebbcc4ed79b1b774e32794",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8952ee73dd21e66d2eba17a544012a983db67d3a266dfcca535bbbf44e0da1a8",
+				"dweb:/ipfs/QmSDX3LQC7ZXDcV3iSGoaXiuXpFBptG5UVLyqMKpFYVsJH"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,319 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address[]",
+						"name": "_owners",
+						"type": "address[]"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_requiredSignatures",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_approvals",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_approver",
+						"type": "address"
+					}
+				],
+				"name": "ApprovalReceived",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "TransferApproved",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_initiator",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_receiver",
+						"type": "address"
+					}
+				],
+				"name": "TransferRequestCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositedTo",
+						"type": "address"
+					}
+				],
+				"name": "deposited",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferedAmount",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "approve",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_receiver",
+						"type": "address"
+					}
+				],
+				"name": "createTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTransferRequests",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address payable",
+								"name": "receiver",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "approvals",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "hasBeenSent",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Multisig_Wallet.Transfer[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "owners",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "ronmedina@superiorblocks.io",
+			"details": "Multisig Wallet Smart Contract where multiple signatures/approvals  are needed for an outgoing transfer to take place. Anyone can deposit funds.  As soon as we want to spend funds, it requires the specified number of approvals.",
+			"kind": "dev",
+			"methods": {
+				"approve(uint256)": {
+					"details": "A method to approve a transfer by an owner.  It does the following:  - Sets your approval for one of the transfer requests.  - Updates the Transfer object.  - Updates the mapping to record the approval for the msg.sender.  - When the amount of approvals for a transfer has reached the requiredSignatures, this function sends the transfer to the recipient.  - An owner is not allowed to vote twice.  - An owner is not allowed to vote on a tranfer request that has already been sent."
+				},
+				"createTransfer(uint256,address)": {
+					"details": "A method that creates an instance of the Transfer struct and push it into the  transferRequests array "
+				},
+				"deposit()": {
+					"details": "A method to make a deposit.",
+					"returns": {
+						"_0": "balance of the sender."
+					}
+				},
+				"getBalance()": {
+					"details": "A method to get the sender's balance.",
+					"returns": {
+						"_0": "balance of the sender."
+					}
+				},
+				"getTransferRequests()": {
+					"details": "A method to get transfer requests array information.",
+					"returns": {
+						"_0": "transferRequest array."
+					}
+				}
+			},
+			"title": "Multisig Wallet",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/MultiSIG_Wallet.sol": "Multisig_Wallet"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/MultiSIG_Wallet.sol": {
+			"keccak256": "0x02dfeb166cc605b13ebde0380bb7ed352b6b785bd89d4406559c89438f42d9d4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://08326b50f0a2ea69ad3c7bb8d050e878e4182f51c87fd00ab54a3e622e5fb6aa",
+				"dweb:/ipfs/QmciYJsWEVrrxkjpFm1mxcAX6vGArcUvZC8cqhvd2zFQLv"
+			]
+		}
+	},
+	"version": 1
+}

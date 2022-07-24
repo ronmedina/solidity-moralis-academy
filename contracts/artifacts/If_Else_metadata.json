@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_message",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Bank",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Bank_ControlFLow.sol": "If_Else"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Bank_ControlFLow.sol": {
+			"keccak256": "0x6c5e089c81fbc83f47ea5e9569b2559cc5ad577c053887ef88d39de60ee4015b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://caa6803b4644a84a18d3b18e2af9861024dc9b2f1698ffcbc33200836d522e5a",
+				"dweb:/ipfs/QmcNhRBmy4mV6Em5iB12tgMSmsr8gWJGcu1Txe8CiYpwCk"
+			]
+		}
+	},
+	"version": 1
+}

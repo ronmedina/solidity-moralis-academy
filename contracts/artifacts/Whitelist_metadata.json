@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "member",
+						"type": "address"
+					}
+				],
+				"name": "MemberAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "member",
+						"type": "address"
+					}
+				],
+				"name": "MemberRemoved",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_member",
+						"type": "address"
+					}
+				],
+				"name": "addMember",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_member",
+						"type": "address"
+					}
+				],
+				"name": "isMember",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_member",
+						"type": "address"
+					}
+				],
+				"name": "removeMember",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Alberto Cuesta Canada",
+			"details": "Implements a simple whitelist of addresses.",
+			"kind": "dev",
+			"methods": {
+				"addMember(address)": {
+					"details": "A method to add a member to the whitelist",
+					"params": {
+						"_member": "The member to add as a member."
+					}
+				},
+				"constructor": {
+					"details": "The contract constructor."
+				},
+				"isMember(address)": {
+					"details": "A method to verify whether an address is a member of the whitelist",
+					"params": {
+						"_member": "The address to verify."
+					},
+					"returns": {
+						"_0": "Whether the address is a member of the whitelist."
+					}
+				},
+				"removeMember(address)": {
+					"details": "A method to remove a member from the whitelist",
+					"params": {
+						"_member": "The member to remove as a member."
+					}
+				}
+			},
+			"title": "Whitelist",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Whitelist.sol": "Whitelist"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ownable.sol": {
+			"keccak256": "0x87db9df0057cbed9ee5b974ba3c75af7c6955d708588f3ea006c8015fcade523",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://637012b6fe8d21a6eb1c625feac4a6b2223372d7db7c1013bea59ae6335edcc2",
+				"dweb:/ipfs/QmT4cc1kf2YaecE9ssXSH483pnJgfvgswJJ9H193HasVNv"
+			]
+		},
+		"contracts/Whitelist.sol": {
+			"keccak256": "0x037d827b7ef9b59f2049bad3785a7980f24e38b31e493bc3f1a0ab775bc20eae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4b5a6059ad4b6f64cac3e6df0baf2c01b68ce8e716e8ad445f35234492921df8",
+				"dweb:/ipfs/QmUycXA9NC6hgp1LvrE7peEkDdMe3U585o9V26qq5YB68s"
+			]
+		}
+	},
+	"version": 1
+}

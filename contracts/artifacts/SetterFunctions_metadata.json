@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_number",
+						"type": "int256"
+					}
+				],
+				"name": "setNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/SetterFunctions.sol": "SetterFunctions"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SetterFunctions.sol": {
+			"keccak256": "0x0105739396b58c586d022814a45a1c2b24f941e9993a142eaf5314ff18afb7c2",
+			"urls": [
+				"bzz-raw://8509bcd6b08d2133fb646162fa1c724812d861e1201990e4bff940dc68fa696c",
+				"dweb:/ipfs/Qmb8heoykzCvyKhnUwEfzwRzCxdaojYYNtienYc6vk9bdB"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "hello",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hellowworld.sol": "HellowWorld"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hellowworld.sol": {
+			"keccak256": "0xf2c45d4d3ec2597592e855af74dcc02e30d905ded9d8922e1a4266ae6d5986e8",
+			"urls": [
+				"bzz-raw://94c5910c4ea0fd39e9cb5f56137496e23c32b49cf71a1751cc3d7f3f1b7b5047",
+				"dweb:/ipfs/QmQKw1NWeSU4i73pFAdBXvLH8adV9ac841NJjYxmAWrsTJ"
+			]
+		}
+	},
+	"version": 1
+}

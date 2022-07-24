@@ -1,0 +1,95 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "_number",
+						"type": "int256"
+					}
+				],
+				"name": "addNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getArray",
+				"outputs": [
+					{
+						"internalType": "int256[]",
+						"name": "",
+						"type": "int256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_index",
+						"type": "uint256"
+					}
+				],
+				"name": "getNumber",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Superior Blocks",
+			"details": "Simple example of an array.",
+			"kind": "dev",
+			"methods": {},
+			"title": "Array",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "ARRAY - An array allows us to represent a collection of data, but it is often more useful to think of an array as a collection of variables of the same type with keys having sequential order based off the order they were added.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Hello_Arrays.sol": "Array"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Hello_Arrays.sol": {
+			"keccak256": "0xaed92fd8857a85e48b391b542c6b21aded1551dd9326cbe15669821a5b8ccb9d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://52a44ebfc360825b2aac0798e837b7a0cbee1a034ead81160bcb987dd6fb5abd",
+				"dweb:/ipfs/QmbrckzPYTPsqW6qDf9facznR1146TdccJKmTBhBy8NCzt"
+			]
+		}
+	},
+	"version": 1
+}

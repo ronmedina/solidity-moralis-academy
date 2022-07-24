@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "selfDestruct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Inheritance_Destroyable.sol": "Destroyable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Inheritance_Destroyable.sol": {
+			"keccak256": "0x82b019bb5ac8fbb1d7ca88cb675c250f5bb2ad34cb4eaa21a3558ae2d0034b9f",
+			"urls": [
+				"bzz-raw://eaaae65d9f38f212bebda2453e2f47a8b6b62f81fe19a0493d0ba127d3bb30d9",
+				"dweb:/ipfs/QmXZK2JuEHwd9XoyBzYCse8tNN2ZSpYxxJGMLivQpH7yLj"
+			]
+		},
+		"contracts/Inheritance_Ownable.sol": {
+			"keccak256": "0x53d528764beb6ddd14f365ffe50b434b7a72453df1a2044d66725bd806d1fdd9",
+			"urls": [
+				"bzz-raw://f9b0bf73a0df9edfcc39c8ede5f59e45a0de8504728054a2c68d8424da516be2",
+				"dweb:/ipfs/QmY5T7Svnbvf4aa4sXjAmwt1kvgSL7JiPxkhqaSiChxMBq"
+			]
+		}
+	},
+	"version": 1
+}
